@@ -1,1 +1,0 @@
-# ryiandzuhri.github.io

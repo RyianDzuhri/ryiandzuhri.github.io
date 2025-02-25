@@ -1,0 +1,46 @@
+/* Reset default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background hitam putih */
+body {
+    background: linear-gradient(135deg, #000000, #ffffff);
+    color: #fff;
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+}
+
+/* Project Card */
+.project-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
