@@ -1,46 +1,92 @@
-/* Reset default */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Background hitam putih */
-body {
-    background: linear-gradient(135deg, #000000, #ffffff);
-    color: #fff;
-    text-align: center;
-}
-
-/* Header */
 header {
-    padding: 50px 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-/* Sections */
-section {
-    padding: 40px 20px;
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 15px 30px;
 }
 
-/* Project Card */
-.project-card {
+/* Style logo & teks */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Style menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    margin: 10px auto;
-    width: 80%;
-    max-width: 400px;
-    border-radius: 10px;
-    transition: 0.3s;
+    border-radius: 5px;
 }
 
-.project-card:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #888888; /* Abu-abu gelap */
+    text-shadow: -1px -1px 0 #444, 1px -1px 0 #444, -1px 1px 0 #444, 1px 1px 0 #444; /* Outline hitam tipis */
 }
 
-/* Footer */
-footer {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+.black-box {
+    background-color: black;
+    color: white;
+    padding: 180px;
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 50px; 
+}
+
+p {
+    font-family:sans-serif;
+}
+
+.container1 {
+    display: flex; /* Biar gambar & teks sejajar */
+    align-items: center; /* Biar sejajar tengah */
+    gap: 20px; /* Jarak antara gambar & teks */
+}
+
+img {
+    width: 150px; /* Ukuran gambar */
+    height: auto;
+    border-radius: 10px; /* Biar lebih estetik */
+}
+
+.text {
+    flex: 1; /* Biar teks otomatis menyesuaikan */
+    text-align: right; /* Teks rata kanan */
 }
