@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Ryian Dzuhri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="javascript/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="assets/images/R.png" alt="Logo">
-                <span>Muhammad Ryian Dzuhi</span>
+    <div class="background"></div>
+    <div class="container">
+        <header>
+            <div class="profile-container">
+                <img src="assets/images/R.png" alt="Profile Picture">
+                <h1>Muhammad Ryian Dzuhri</h1>
+                <p>Learning Web Development</p>
+                <p>Hello, I am a 4th-semester Computer Science student with an interest in web development, databases, and software analysis. Currently, I am developing a portfolio using HTML, CSS, and PHP, as well as several data-driven projects. 
+                    I prefer a minimalist design with a monochrome theme and prioritize functionality in every project I create.</p>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <br><br><br><br>
-    <div>
-        <h1>INTRODUCTION</h1>
+        </header>
+        <section class="details">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <ul id="experience-list"></ul>
+            
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <ul id="education-list"></ul>
+            
+            <h2><i class="fas fa-code"></i> Skills</h2>
+            <ul id="skills-list"></ul>
+        </section>
+        <footer>
+            <a href="mailto:muhammadryiandzuhri@gmail.com" target="_blank" class="icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-ryian-dzuhri-66aa40356/" target="_blank" class="icon">
+                <i class="fab fa-linkedin"></i>
+            </a><br>
+            <button id="toggle-theme">Toggle Dark Mode</button>
+        </footer>        
     </div>
-    <div class="black-box">
-        <div class="container">
-            <img src="assets/images/R.png" alt="Foto Saya">
-            <div class="text">
-                <h1>I'm Muhammad Ryian Dzuhri</h1>
-        <p>I am a 4th-semester Computer Science student with an interest in web development, databases, and software analysis. Currently, I am developing a portfolio using HTML, CSS, and PHP, as well as several data-driven projects.
-            I prefer a minimalist design with a monochrome theme and prioritize functionality in every project I create.</p>
-    </div>    
 </body>
 </html>
