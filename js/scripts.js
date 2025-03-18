@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
     const education = [
         { field: "Computer Science", school: "Halu Oleo University", years: "2023-Now" },
-        { field: "Mathematics and Natural Sciences", school: "SMAN 09 KENDARI", years: "2020-2023" },
+        { field: "Mathematics and Sciences", school: "SMAN 09 KENDARI", years: "2020-2023" },
         { field: "Junior High School", school: "SMPN 02 KENDARI", years: "2016-2020" },
         { field: "Elementary School", school: "SDN 10 KENDARI BARAT", years: "2010-2016" }
     ];
