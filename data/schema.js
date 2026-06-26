@@ -1,4 +1,4 @@
-{
+window.mySchemaData = {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -42,7 +42,6 @@
         "addressCountry": "ID"
       }
     },
-
     {
       "@type": "Project",
       "@id": "https://ryiandzuhri.github.io/#project-sikgb",
@@ -65,7 +64,6 @@
         "@id": "https://ryiandzuhri.github.io/#person"
       }
     },
-
     {
       "@type": "DefinedTermSet",
       "@id": "https://ryiandzuhri.github.io/#skills-collection",
@@ -92,4 +90,4 @@
       ]
     }
   ]
-}
+};
