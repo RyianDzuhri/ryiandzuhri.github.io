@@ -1,0 +1,89 @@
+/* ==========================================================
+   FADE ANIMATION
+========================================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================================
+   APPLY ANIMATION
+========================================================== */
+
+.hero-content{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.about-content{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.education-item{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.experience-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.skill-card{
+
+    animation:zoomIn .5s ease;
+
+}
+
+.project-card{
+
+    animation:zoomIn .5s ease;
+
+}
+
+.contact-item{
+
+    animation:fadeUp .8s ease;
+
+}

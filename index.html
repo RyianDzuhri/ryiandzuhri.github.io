@@ -1,50 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Ryian Dzuhri</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="/js/scripts.js"></script>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Muhammad Ryian Dzuhri | Backend Developer</title>
+    <meta name="description" content="Portfolio Muhammad Ryian Dzuhri, Backend Developer yang berfokus pada pengembangan Sistem Informasi menggunakan Laravel.">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
 </head>
+
 <body>
-    <div class="background"></div>
-    <div class="container">
-        <header>
-            <div class="profile-container">
-                <img src="assets/images/R.png" alt="Profile Picture">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar" id="home">
+        <div class="logo">
+            <a href="#">MRD</a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <header class="hero">
+        <div class="hero-content">
+
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
                 <h1>Muhammad Ryian Dzuhri</h1>
-                <p>Learning Web Development</p>
-                <p>Hello, I am a 4th-semester Computer Science student with an interest in web development, databases, and software analysis. Currently, I am developing a portfolio using HTML, CSS, and PHP, as well as several data-driven projects. 
-                    I prefer a minimalist design with a monochrome theme and prioritize functionality in every project I create.</p>
+                <h2>
+                    <span id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p>
+                    Informatics student at Halu Oleo University with a strong
+                    interest in Information System Development using Laravel.
+                    Currently expanding my frontend knowledge with modern
+                    JavaScript frameworks such as React and Svelte.
+                </p>
+                <div class="hero-button">
+                    <a href="#projects">View Projects</a>
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <div class="hero-stats">
+
+                    <div class="stat-item">
+                        <h3>3+</h3>
+                        <p>Projects</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h3>8+</h3>
+                        <p>Technologies</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h3>2</h3>
+                        <p>Experiences</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h3>1</h3>
+                        <p>University</p>
+                    </div>
+
+                </div>
             </div>
-        </header>
-        <section class="details">
-            <h2><i class="fas fa-briefcase"></i> Experience</h2>
-            <ul id="experience-list"></ul>
-            
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-            <ul id="education-list"></ul>
-            
-            <h2><i class="fas fa-code"></i> Skills</h2>
-            <ul id="skills-list"></ul>
+
+            <div class="hero-image">
+                <img src="assets/images/profile/profile.jpeg" alt="Muhammad Ryian Dzuhri">
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+        <!-- About -->
+        <section id="about" class="about reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <p>Get to know me better</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="assets/images/profile/profile.jpeg" alt="Muhammad Ryian Dzuhri">
+                    </div>
+                    <div class="about-text">
+                        <h3>Backend Developer & Information System Enthusiast</h3>
+                        <p>
+                            Hello! I'm <strong>Muhammad Ryian Dzuhri</strong>, an undergraduate
+                            Informatics student at Halu Oleo University. I have a strong
+                            interest in Information System Development, especially backend
+                            application development using Laravel.
+                        </p>
+                        <p>
+                            Currently, I am continuously improving my backend development
+                            skills while also learning modern frontend technologies such as
+                            React and Svelte through Vite to build more interactive web
+                            applications.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span>Full Name</span>
+                                <p>Muhammad Ryian Dzuhri</p>
+                            </div>
+                            <div class="info-item">
+                                <span>Date of Birth</span>
+                                <p>7 January 2006</p>
+                            </div>
+                            <div class="info-item">
+                                <span>Place of Birth</span>
+                                <p>Kendari, Indonesia</p>
+                            </div>
+                            <div class="info-item">
+                                <span>Current Residence</span>
+                                <p>Kendari, Southeast Sulawesi</p>
+                            </div>
+                            <div class="info-item">
+                                <span>Education</span>
+                                <p>Bachelor of Informatics, Halu Oleo University</p>
+                            </div>
+                            <div class="info-item">
+                                <span>Email</span>
+                                <p>muhammadryiandzuhri@gmail.com</p>
+                            </div>
+                            <div class="info-item">
+                                <span>GitHub</span>
+                                <p>github.com/RyianDzuhri</p>
+                            </div>
+                            <div class="info-item">
+                                <span>LinkedIn</span>
+                                <p>Coming Soon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <footer>
-            <a href="mailto:muhammadryiandzuhri@gmail.com" target="_blank" class="icon">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/muhammad-ryian-dzuhri-66aa40356/" target="_blank" class="icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/ryiandzuhri" target="_blank" class="icon">
-                <i class="fab fa-github"></i>
-            </a>
-            <br>
-            <button id="toggle-theme">Toggle Dark Mode</button>
-        </footer>
-               
-    </div>
+
+        <!-- Education -->
+        <section id="education" class="education reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Education</h2>
+                    <p>My educational journey</p>
+                </div>
+                <div class="education-timeline">
+
+                    <div class="education-item">
+                        <div class="education-year"><span>2012 – 2018</span></div>
+                        <div class="education-content">
+                            <h3>SD Negeri 10 Kendari Barat</h3>
+                            <p>Completed primary education and built the fundamental knowledge for further academic development.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-year"><span>2018 – 2021</span></div>
+                        <div class="education-content">
+                            <h3>SMP Negeri 2 Kendari</h3>
+                            <p>Completed junior high school while developing academic and extracurricular interests.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-year"><span>2021 – 2024</span></div>
+                        <div class="education-content">
+                            <h3>SMA Negeri 9 Kendari</h3>
+                            <p>Participated in the volleyball organization and joined the SMADA CUP Vol. 2 volleyball competition.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-year"><span>2024 – Present</span></div>
+                        <div class="education-content">
+                            <h3>Halu Oleo University</h3>
+                            <h4>Bachelor of Informatics</h4>
+                            <p>
+                                Currently pursuing a Bachelor's degree in Informatics with a focus on
+                                Information System Development, Backend Engineering, and modern web technologies.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="experience reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Experience</h2>
+                    <p>Organization &amp; Competition</p>
+                </div>
+                <div class="experience-wrapper">
+
+                    <div class="experience-card">
+                        <h3>Volleyball Organization</h3>
+                        <span>SMA Negeri 9 Kendari</span>
+                        <p>
+                            Active member of the school volleyball organization.
+                            Participated in regular training sessions, teamwork activities,
+                            and various school sports events.
+                        </p>
+                    </div>
+
+                    <div class="experience-card">
+                        <h3>SMADA CUP Vol. 2</h3>
+                        <span>Volleyball Competition</span>
+                        <p>
+                            Participated as a volleyball athlete representing the school
+                            in the SMADA CUP Vol. 2 competition, gaining valuable experience
+                            in teamwork, discipline, and competitive sports.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="skills reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Skills</h2>
+                    <p>Technologies and tools I use</p>
+                </div>
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <h3>Backend Development</h3>
+                        <div class="skill-list">
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Frontend Development</h3>
+                        <div class="skill-list">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                            <span>React (Learning)</span>
+                            <span>Svelte + Vite (Learning)</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Database</h3>
+                        <div class="skill-list">
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Tools</h3>
+                        <div class="skill-list">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Visual Studio Code</span>
+                            <span>Postman</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Projects</h2>
+                    <p>Some projects I have worked on</p>
+                </div>
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <img src="assets/images/project/si-kgb.png" alt="SI-KGB Kendari">
+                        <div class="project-content">
+                            <h3>SI-KGB Kendari</h3>
+                            <p>
+                                A web-based information system for managing employee data,
+                                salary increment schedules, and administrative processes.
+                            </p>
+                            <div class="project-tech">
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+                                <span>AI API</span>
+                            </div>
+                            <div class="project-action">
+                                <a href="https://github.com/RyianDzuhri/si-kepegawaian.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="assets/images/project/rtlh.png" alt="RTLH System">
+                        <div class="project-content">
+                            <h3>RTLH Assistance System</h3>
+                            <p>
+                                A web application that manages the submission, verification,
+                                survey, and approval process for housing assistance.
+                            </p>
+                            <div class="project-tech">
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="project-action">
+                                <a href="https://github.com/RyianDzuhri/si-hunlay-example.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="assets/images/project/minecraft.png" alt="SaaS Minecraft">
+                        <div class="project-content">
+                            <h3>SaaS Minecraft platform</h3>
+                            <p>
+                                A web platform built to manage, deploy, and automate 
+                                Minecraft server hosting services seamlessly.
+                            </p>
+                            <div class="project-tech">
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="project-action">
+                                <a href="https://github.com/RyianDzuhri/saas-minecraft.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p>Let's connect and collaborate</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+
+                        <div class="contact-item">
+                            <h3>Email</h3>
+                            <a href="mailto:muhammadryiandzuhri@gmail.com">
+                                muhammadryiandzuhri@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/RyianDzuhri" target="_blank" rel="noopener noreferrer">
+                                github.com/RyianDzuhri
+                            </a>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>LinkedIn</h3>
+                            <p>Coming Soon</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>Location</h3>
+                            <p>Kendari, Southeast Sulawesi, Indonesia</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="footer-logo">
+                    <h2>Muhammad Ryian Dzuhri</h2>
+                    <p>
+                        Backend Developer specializing in Information System
+                        Development with Laravel.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="mailto:muhammadryiandzuhri@gmail.com">Email</a></li>
+                        <li><a href="https://github.com/RyianDzuhri" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><span>LinkedIn (Coming Soon)</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Muhammad Ryian Dzuhri. All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
 </body>
 </html>
