@@ -86,12 +86,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Memuat metadata semantik secara dinamis dari file eksternal JSON-LD
-fetch('schema.jsonld')
-    .then(response => response.json())
-    .then(data => {
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.text = JSON.stringify(data);
-        document.head.appendChild(script);
-    })
-    .catch(error => console.error('Gagal memuat metadata semantik:', error));
+// fetch('schema.jsonld')
+//     .then(response => response.json())
+//     .then(data => {
+//         const script = document.createElement('script');
+//         script.type = 'application/ld+json';
+//         script.text = JSON.stringify(data);
+//         document.head.appendChild(script);
+//     })
+//     .catch(error => console.error('Gagal memuat metadata semantik:', error));
