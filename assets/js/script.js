@@ -1,5 +1,5 @@
 /* ==========================================================
-   1. TYPING EFFECT (Animasi Teks Perkenalan)
+   1. TYPING EFFECT
 ========================================================== */
 const words = [
     "Backend Developer",
@@ -20,7 +20,7 @@ function typeEffect() {
         typingText.textContent = currentWord.substring(0, charIndex++);
         if (charIndex > currentWord.length) {
             isDeleting = true;
-            setTimeout(typeEffect, 1500); // Durasi berhenti saat kata selesai diketik
+            setTimeout(typeEffect, 1500);
             return;
         }
     } else {
@@ -33,19 +33,15 @@ function typeEffect() {
             }
         }
     }
-    setTimeout(typeEffect, isDeleting ? 50 : 100); // Kecepatan mengetik & menghapus
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
 }
 
-// Jalankan typing effect saat DOM selesai dimuat
 document.addEventListener("DOMContentLoaded", () => {
-    if (typingText) {
-        typeEffect();
-    }
+    if (typingText) typeEffect();
 });
 
-
 /* ==========================================================
-   2. SCROLL REVEAL EFFECT (Animasi Muncul Saat Di-scroll)
+   2. SCROLL REVEAL EFFECT
 ========================================================== */
 document.addEventListener("DOMContentLoaded", function () {
     const revealElements = document.querySelectorAll(".reveal");
@@ -55,14 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add("active");
-                    // Elemen hanya dianimasikan sekali saat pertama kali terlihat
                     observer.unobserve(entry.target); 
                 }
             });
         },
         {
-            threshold: 0.1,             // Aktif jika 10% elemen masuk layar
-            rootMargin: "0px 0px -50px 0px" // Delay jarak pemicu animasi
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
         }
     );
 
@@ -70,18 +65,3 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(element);
     });
 });
-
-
-/* ==========================================================
-   3. DYNAMIC SCHEMA INJECTION (Sinkron & Lolos Validator)
-========================================================== */
-// Mengambil variabel global window.mySchemaData yang dimuat dari data/schema.jsonld 
-// lalu menyuntikkannya ke tag <head> HTML agar terbaca instan oleh validator.schema.org
-if (window.mySchemaData) {
-    const scriptSchema = document.createElement('script');
-    scriptSchema.type = 'application/ld+json';
-    scriptSchema.text = JSON.stringify(window.mySchemaData);
-    document.head.appendChild(scriptSchema);
-} else {
-    console.warn("Metadata Semantik (window.mySchemaData) belum termuat. Pastikan data/schema.jsonld dipanggil di HTML.");
-}
